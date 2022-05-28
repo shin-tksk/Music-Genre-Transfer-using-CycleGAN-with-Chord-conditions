@@ -17,10 +17,10 @@ x、x hat、x tlideはそれぞれ、実データ、変換後のデータ、再�
 GeneratorとDiscriminatorの構造は以下のようになっている。
 
 <img src="imgs/gen.png" width="600px"/>
-<img src="imgs/dis.png" width="300px"/>
+<img src="imgs/dis.png" width="350px"/>
 
 ## Genre Classfier
 
 ジャンル変換の精度を評価するために分類器を別で学習させる。構造は以下のようになっている。
 
-<img src="imgs/cla.png" width="300px"/>
+<img src="imgs/cla.png" width="400px"/>
