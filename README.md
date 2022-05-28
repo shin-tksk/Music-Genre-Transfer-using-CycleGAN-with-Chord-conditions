@@ -5,7 +5,7 @@
 - コード情報を取得するために、tonal centroid features(調性中心特徴)を使用する。
 - 評価には別で学習したジャンル分類器を使用している。
 
-# Model Architecture
+## Model Architecture
 
 本研究のモデルは、2つのGANをサイクル的に構成し学習を行っている（CycleGAN）
 
