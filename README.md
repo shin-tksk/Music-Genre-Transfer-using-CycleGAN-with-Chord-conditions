@@ -49,4 +49,4 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 
 分類器の分類精度は以下のようになっている。
 
-<img src="imgs/cla_result.png" width="400px"/>
+<img src="imgs/cla_result.png" width="500px"/>
