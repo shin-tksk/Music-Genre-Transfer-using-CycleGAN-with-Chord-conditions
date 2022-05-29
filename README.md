@@ -14,11 +14,13 @@ MIDIデータから１２次元の音程ベクトルを算出して、L1正規�
 
 <img src="imgs/tonal.png" width="600px"/><img src="imgs/distance.png" width="200px"/>
 
-音程空間上で入力データと各コード（メジャー、マイナー）のユークリッド距離を計算してコードを検出する。
-
 以下にメジャーコードの例を示す。
 
 <img src="imgs/major_5th.png" width="250px"/><img src="imgs/major_ma3th.png" width="250px"/><img src="imgs/major_mi3th.png" width="250px"/>
+
+音程空間上で入力データと各コード（メジャー、マイナー）のユークリッド距離を計算してコードを検出する。
+
+<img src="imgs/distance.png" width="300px"/>
 
 ## Model Architecture
 
