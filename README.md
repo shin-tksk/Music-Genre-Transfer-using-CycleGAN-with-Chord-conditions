@@ -107,6 +107,35 @@ PAはジャンルがAである確率を表し、PBはジャンルがBである�
 
 <img src="imgs/key.png" width="1000px"/>
 
+##Usage
+
+-Pretreatment
+
+```bash
+python shuffle.py
+```
+
+```bash
+python Testfile.py jazz train
+```
+-Train and Test
+
+```bash
+python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='cyclegan' --model='base' --sigma_d=0 --phase='train'
+```
+
+```bash
+python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='cyclegan' --model='base' --sigma_d=0 --phase='test' --which_direction='AtoB'
+```
+
+```bash
+python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='classifier' --sigma_c=0 --phase='train'
+```
+
+```bash
+python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='classifier' --model='base' --sigma_c=0 --sigma_d=0 --phase='test' --which_direction='AtoB'
+```
+
 
 
 
