@@ -1,6 +1,6 @@
 # Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions
 
-- CycleGANを用いて異なる音楽ジャンル間でのドメイン変換を実現するモデルを構築した。
+- CycleGANを用いて異なる音楽ジャンル間でのドメイン変換を実現するモデルの改良を行った。
 - コード情報を学習に組み込むことでジャンル変換後の移調を抑えたり、変換精度を上げることを目的としている。
 - コード情報を取得するために、tonal centroid features(調性中心特徴)を使用する。
 - 評価には別で学習したジャンル分類器を使用している。
@@ -12,7 +12,9 @@
 
 MIDIデータから１２次元の音程ベクトルを算出して、L1正規化した後、6×12の三角関数基底の変換行列をかけて、2×3次元の音程空間にマッピングします。
 
-<img src="imgs/tonal.png" width="600px"/><img src="imgs/distance.png" width="200px"/>
+計算式は以下のようになる。
+
+<img src="imgs/tonal.png" width="600px"/>
 
 以下にメジャーコードの例を示す。
 
@@ -21,6 +23,8 @@ MIDIデータから１２次元の音程ベクトルを算出して、L1正規�
 音程空間上で入力データと各コード（メジャー、マイナー）のユークリッド距離を計算してコードを検出する。
 
 <img src="imgs/distance.png" width="300px"/>
+
+ζは楽曲データの音程空間の座標を表し、ζ'は距離を測りたいコードの座標を表す。
 
 ## Model Architecture
 
