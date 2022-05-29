@@ -107,7 +107,7 @@ PAはジャンルがAである確率を表し、PBはジャンルがBである�
 
 <img src="imgs/key.png" width="1000px"/>
 
-##Usage
+## Usage
 
 - Pretreatment
 
