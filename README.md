@@ -50,3 +50,39 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 分類器の分類精度は以下のようになっている。
 
 <img src="imgs/cla_result.png" width="500px"/>
+
+## Versions
+
+- Python 3.7.0
+- Numpy 1.19.5
+- Scipy 1.7.2
+- TensorFlow-gpu 1.14.0
+- prttey midi 0.2.9
+- Pypianoroll 1.0.4
+
+## Datasets
+
+この研究では、クラシック、ジャズ、ポップスの3つのジャンルを使用しています。
+学習時はデータ数が少ないジャンルに合わせて学習を行う。
+
+データ数は以下のようになっている。
+
+<img src="imgs/data.png" width="500px"/>
+
+以下に前処理の手順を説明します。
+
+1.　pretty midiとpypianorollを二つのパッケージを用いて、MIDIデータをnumpy配列に変換する。最小単位は４８部音符とし、音高はC0からC8の84音を使用する。入力データは４小節であり、192×84の行列となる。
+2.　MIDIデータのト全てのトラックをピアノトラックに落とし込む。またドラムトラックや交響曲は扱いが難しいので使用しない。
+
+
+
+
+
+
+
+
+
+
+
+
+
