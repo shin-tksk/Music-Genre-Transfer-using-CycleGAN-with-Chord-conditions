@@ -87,11 +87,11 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 
 学習は３０エポック行う。最適化にはAdamを使用する。
 
-評価指標を以下のように定義する。
+評価指標S totalを以下のように定義する。
 
 <img src="imgs/eva.png" width="1000px"/>
 
-
+PAはジャンルがAである確率を表し、PBはジャンルがBである確率を表す。
 
 
 
