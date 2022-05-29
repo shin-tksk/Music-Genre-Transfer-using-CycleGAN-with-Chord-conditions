@@ -8,12 +8,12 @@
 ## Tonal Centroid Features
 
 楽曲のコードを検出するために、tonal centroid features(調性中心特徴)を使用。
-（音程ベクトルを五度圏、短三度圏、長三度圏にマッピングする。）
+（音程ベクトルをTonnetzに基づき五度圏、短三度圏、長三度圏にマッピングする）
 MIDIデータから１２次元の音程ベクトルを算出して、L1正規化した後、6×12の三角関数基底の変換行列をかけて、2×3次元の音程空間にマッピングします。
 音程空間上で入力データと各コード（メジャー、マイナー）のユークリッド距離を計算してコードを検出する。
 以下にメジャーコードの例を示す。
 
-<img src="imgs/major_5th.png" width="300px"/>
+<img src="imgs/major_5th.png" width="300px"/><img src="imgs/major_5th.png" width="300px"/><img src="imgs/major_5th.png" width="300px"/>
 
 ## Model Architecture
 
