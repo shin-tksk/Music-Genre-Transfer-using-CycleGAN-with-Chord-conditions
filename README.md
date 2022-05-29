@@ -29,11 +29,13 @@ MIDIデータから12次元の音程ベクトルを算出して、L1正規化し
 
 ## Model Architecture
 
-本研究のモデルは、2つのGANをサイクル的に構成し学習を行っている（CycleGAN）
+本研究のモデルは、2つのGANをサイクル的に構成し学習を行っている。（CycleGAN）
 
 <img src="imgs/model.png" width="700px"/>
 
-GenはGenerator、DisはDiscriminator、AとBは2つのジャンルを示す。青と赤の矢印は2方向のジャンル変換、黒の矢印はDiscriminatorへの入力を表す。
+GenはGenerator、DisはDiscriminator、AとBは2つのジャンルを示す。
+
+青と赤の矢印は2方向のジャンル変換、黒の矢印はDiscriminatorへの入力を表す。
 x、x hat、x tlideはそれぞれ、実データ、変換後のデータ、再変換後のデータを表す。
 
 GeneratorとDiscriminatorの構造は以下のようになっている。
