@@ -51,15 +51,6 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 
 <img src="imgs/cla_result.png" width="500px"/>
 
-## Versions
-
-- Python 3.7.0
-- Numpy 1.19.5
-- Scipy 1.7.2
-- TensorFlow-gpu 1.14.0
-- prttey midi 0.2.9
-- Pypianoroll 1.0.4
-
 ## Datasets
 
 この研究では、クラシック、ジャズ、ポップスの3つのジャンルを使用しています。
@@ -71,17 +62,34 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 
 以下に前処理の手順を説明します。
 
-1.　pretty midiとpypianorollを二つのパッケージを用いて、MIDIデータをnumpy配列に変換する。最小単位は４８部音符とし、音高はC0からC8の84音を使用する。入力データは４小節であり、192×84の行列となる。
+1.　pretty midiとpypianorollを二つのパッケージを用いて、MIDIデータをnumpy配列に変換する。最小単位は４８部音符とし、音高はC0からC8の84音を使用する。入力データは4小節であり、192×84の行列となる。
 
 2.　MIDIデータのト全てのトラックをピアノトラックに落とし込む。またドラムトラックや交響曲は扱いが難しいので使用しない。
 
 3.　ベロシティ（音量）は全て100に固定して2値の行列を作成する。
 
-4.　4/4拍子以外の楽曲出ないものや拍子記号が曲中で変わるものを除外する。
+4.　4/4拍子以外の楽曲出ないものや拍子記号が曲中で変わるもの、コード情報が取れないものを除外する。
 
 以上の工程により、1つのデータは[192,84,1]となる。（3つ目の要素はチャネル数を表す）
 
+学習データとテストデータは9：1に分ける。
 
+## Versions
+
+- Python 3.7.0
+- Numpy 1.19.5
+- Scipy 1.7.2
+- TensorFlow-gpu 1.14.0
+- prttey midi 0.2.9
+- Pypianoroll 1.0.4
+
+## Training and Testing
+
+学習は３０エポック行う。最適化にはAdamを使用する。
+
+評価指標を以下のように定義する。
+
+<img src="imgs/eva.png" width="500px"/>
 
 
 
