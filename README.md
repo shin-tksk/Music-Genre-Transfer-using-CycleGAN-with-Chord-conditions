@@ -89,7 +89,7 @@ GeneratorとDiscriminatorの構造は以下のようになっている。
 
 評価指標を以下のように定義する。
 
-<img src="imgs/eva.png" width="500px"/>
+<img src="imgs/eva.png" width="700px"/>
 
 
 
