@@ -14,9 +14,9 @@ MIDIデータから１２次元の音程ベクトルを算出して、L1正規�
 
 計算式は以下のようになる。
 
-<img src="imgs/tonal.png" width="600px"/>
+<img src="imgs/tonal.png" width="400px"/>
 
-以下にメジャーコードの例を示す。
+以下に例として音程空間上の各ルート音のメジャーコードの座標を示す。
 
 <img src="imgs/major_5th.png" width="250px"/><img src="imgs/major_ma3th.png" width="250px"/><img src="imgs/major_mi3th.png" width="250px"/>
 
