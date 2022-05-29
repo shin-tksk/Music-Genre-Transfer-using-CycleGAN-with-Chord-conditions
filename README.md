@@ -109,7 +109,7 @@ PAはジャンルがAである確率を表し、PBはジャンルがBである�
 
 ##Usage
 
--Pretreatment
+- Pretreatment
 
 ```bash
 python shuffle.py
@@ -118,7 +118,7 @@ python shuffle.py
 ```bash
 python Testfile.py jazz train
 ```
--Train and Test
+- Train and Test
 
 ```bash
 python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='cyclegan' --model='base' --sigma_d=0 --phase='train'
