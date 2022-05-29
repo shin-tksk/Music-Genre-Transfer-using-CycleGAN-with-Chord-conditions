@@ -118,23 +118,34 @@ python shuffle.py
 ```bash
 python Testfile.py jazz train
 ```
-- Train and Test
+- Train a CycleGAN model:
 
 ```bash
 python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='cyclegan' --model='base' --sigma_d=0 --phase='train'
 ```
 
+- Test a CycleGAN model:
+
 ```bash
 python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='cyclegan' --model='base' --sigma_d=0 --phase='test' --which_direction='AtoB'
 ```
+
+- Train a genru classfier:
 
 ```bash
 python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='classifier' --sigma_c=0 --phase='train'
 ```
 
+- Test a genru classfier:
+
 ```bash
 python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='classifier' --model='base' --sigma_c=0 --sigma_d=0 --phase='test' --which_direction='AtoB'
 ```
+
+## References
+
+"" Music Genre Transfer using CycleGAN with Chord conditions "" used [CycleGAN Music Style Transfer Public](https://github.com/sumuzhao/CycleGAN-Music-Style-Transfer).
+
 
 ## License
 
