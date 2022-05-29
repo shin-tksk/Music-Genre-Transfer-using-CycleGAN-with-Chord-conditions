@@ -138,5 +138,5 @@ python main.py --dataset_A_dir='JC_J' --dataset_B_dir='JC_C' --type='classifier'
 
 ## License
 
-"" Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+"" Music Genre Transfer using CycleGAN with Chord conditions "" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
  
