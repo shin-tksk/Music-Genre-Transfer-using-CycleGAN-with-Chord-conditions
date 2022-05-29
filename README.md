@@ -12,7 +12,7 @@
 
 MIDIデータから１２次元の音程ベクトルを算出して、L1正規化した後、6×12の三角関数基底の変換行列をかけて、2×3次元の音程空間にマッピングします。
 
-<img src="imgs/tonal.png" width="300px"/><img src="imgs/distance.png" width="300px"/>
+<img src="imgs/tonal.png" width="600px"/><img src="imgs/distance.png" width="200px"/>
 
 音程空間上で入力データと各コード（メジャー、マイナー）のユークリッド距離を計算してコードを検出する。
 
