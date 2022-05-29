@@ -99,7 +99,7 @@ PAはジャンルがAである確率を表し、PBはジャンルがBである�
 
 ジャンル変換の精度は以下のようになっている。
 
-<img src="imgs/result.png" width="1000px"/>
+<img src="imgs/result.png" width="1200px"/>
 
 楽曲の移調率は以下のようになっている。
 
