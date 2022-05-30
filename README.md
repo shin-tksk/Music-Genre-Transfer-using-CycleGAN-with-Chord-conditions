@@ -1,12 +1,12 @@
 # Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions
 
+※研究途中です。
+
 - CycleGANを用いて異なる音楽ジャンル間でのドメイン変換を実現するモデルの改良を行った。
 - コード情報を学習に組み込むことでジャンル変換後の移調を抑えたり、変換精度を上げることを目的としている。
 - コード情報を取得するために、tonal centroid features(調性中心特徴)を使用する。
 - コード情報ありとコード情報なしの学習結果と変換後の移調率を評価する。
 - 評価には別で学習したジャンル分類器を使用している。
-
-- ※研究途中です。
 
 ## Tonal Centroid Features
 
