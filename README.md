@@ -124,7 +124,7 @@ python shuffle.py
 ```
 
 ```bash
-python Testfile.py jazz train
+python Testfile.py ['jazz' or 'classic' or 'pop'] ['train' or 'test']
 ```
 - Train a CycleGAN model:
 
