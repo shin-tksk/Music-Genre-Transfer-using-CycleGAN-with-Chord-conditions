@@ -1,6 +1,6 @@
 # Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions
 
-※就活期間のみ公開しています。
+
 
 - CycleGANを用いて異なる音楽ジャンル間でのドメイン変換を実現するモデルの性能向上を試みた。
 - コード（和音）情報を学習に組み込むことでジャンル変換後の移調を抑えたり、変換精度を上げることを目的としている。
