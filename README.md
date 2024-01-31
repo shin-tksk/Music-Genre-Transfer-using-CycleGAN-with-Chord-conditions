@@ -1,4 +1,4 @@
-# Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions(senior thesis)
+# Music-Genre-Transfer-using-CycleGAN-with-Chord-conditions
 
 
 
